@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0e0e0e;
+  color: #fff;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background: #000;
+  position: sticky;
+  top: 0;
+}
+
+header h1 {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.cart {
+  font-size: 18px;
+}
+
+.hero {
+  padding: 25px 15px;
+}
+
+.hero h2 {
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+.hero p {
+  font-size: 14px;
+  color: #bbb;
+}
+
+.products {
+  padding: 15px;
+}
+
+.card {
+  margin-bottom: 20px;
+  background: #141414;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.info {
+  padding: 12px;
+}
+
+.info h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.price {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #fff;
+  color: #000;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+button:active {
+  background: #ccc;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
+  color: #888;
+}
+
+/* Desktop Upgrade */
+@media (min-width: 768px) {
+  .products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
